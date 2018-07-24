@@ -94,13 +94,13 @@ namespace parameters {
   static_assert(0 < UPGRADE_VOTING_THRESHOLD && UPGRADE_VOTING_THRESHOLD <= 100, "Bad UPGRADE_VOTING_THRESHOLD");
   static_assert(UPGRADE_VOTING_WINDOW > 1, "Bad UPGRADE_VOTING_WINDOW");
 
-  const char     CRYPTONOTE_BLOCKS_FILENAME[]                  = "intu-blocks.dat";
-  const char     CRYPTONOTE_BLOCKINDEXES_FILENAME[]            = "intu-blockindexes.dat";
-  const char     CRYPTONOTE_BLOCKSCACHE_FILENAME[]             = "intu-blockscache.dat";
-  const char     CRYPTONOTE_POOLDATA_FILENAME[]                = "intu-poolstate.bin";
-  const char     P2P_NET_DATA_FILENAME[]                       = "intu-p2pstate.bin";
-  const char     CRYPTONOTE_BLOCKCHAIN_INDICES_FILENAME[]      = "intu-blockchainindices.dat";
-  const char     MINER_CONFIG_FILE_NAME[]                      = "intu-miner_conf.json";
+  const char     CRYPTONOTE_BLOCKS_FILENAME[]                  = "sauc-blocks.dat";
+  const char     CRYPTONOTE_BLOCKINDEXES_FILENAME[]            = "sauc-blockindexes.dat";
+  const char     CRYPTONOTE_BLOCKSCACHE_FILENAME[]             = "sauc-blockscache.dat";
+  const char     CRYPTONOTE_POOLDATA_FILENAME[]                = "sauc-poolstate.bin";
+  const char     P2P_NET_DATA_FILENAME[]                       = "sauc-p2pstate.bin";
+  const char     CRYPTONOTE_BLOCKCHAIN_INDICES_FILENAME[]      = "sauc-blockchainindices.dat";
+  const char     MINER_CONFIG_FILE_NAME[]                      = "sauc-miner_conf.json";
   } // parameters
 
   const uint64_t START_BLOCK_REWARD                            = (UINT64_C(10) * parameters::POINT);
@@ -109,8 +109,8 @@ namespace parameters {
   const uint64_t REWARD_INCREASE_INTERVAL                      = (UINT64_C(2640));
 
 
-const char     CRYPTONOTE_NAME[]                             = "intucoin";
-const char     GENESIS_COINBASE_TX_HEX[]                     = "010a01ff0001904e029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd0880712101128f6e2f5ff1cc0d95bf80839501c07d79fcb80726f3ca8cdc094b0e2d89dfd3";
+const char     CRYPTONOTE_NAME[]                             = "SAUCoin";
+const char     GENESIS_COINBASE_TX_HEX[]                     = "010a01ff0001904e029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd0880712101c196cd15e413db9fe1e39a4bcac21127f69a78471499afaa056a685dc129cd36";
 
 const uint32_t GENESIS_NONCE                                 = 70;
 const uint64_t GENESIS_TIMESTAMP                             = 1515479625;
@@ -145,10 +145,10 @@ const size_t   P2P_DEFAULT_HANDSHAKE_INVOKE_TIMEOUT          = 5000;          //
 const char     P2P_STAT_TRUSTED_PUB_KEY[]                    = "8f80f9a5a434a9f1510d13336228debfee9c918ce505efe225d8c94d045fa115";
 
 const std::initializer_list<const char*> SEED_NODES = {
-   "140.82.29.104:17236",
-   "45.77.160.124:17236",
-   "77.93.206.165:17236",
-   "45.77.178.125:17236"
+   "18.185.75.156:17236",
+   "18.184.140.152:17236",
+   "52.59.201.113:17236",
+   "18.185.76.247:17236"
 };
 
 struct CheckpointData {
